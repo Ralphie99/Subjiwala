@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/v2dp"
+        android:background="@color/colorWhite"
+        app:cardCornerRadius="@dimen/v4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/data_block"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/accessory_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/v190dp"
+                    android:layout_margin="@dimen/v5dp"
+                    android:src="@drawable/dummy_rectangle_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/v4dp"
+                    android:layout_marginLeft="@dimen/v10dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/v4dp">
+
+                    <TextView
+                        android:id="@+id/accessory_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Accessory_Name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/v18sp" />
+
+                    <TextView
+                        android:id="@+id/accessory_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/v5dp"
+                        android:src="@drawable/ic_dummy_info"
+                        android:text="price"
+                        android:textSize="@dimen/v15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/v4dp"
+                android:padding="@dimen/v5dp"
+                android:src="@drawable/product_info_small" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

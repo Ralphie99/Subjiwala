@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Welcome_Fragment"
+    android:background="@color/colorWhite"
+    android:clickable="true">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:alpha="0.6"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/v200dp"
+        android:layout_height="@dimen/v200dp"
+        android:src="@drawable/subjiwala_256"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/v80dp"/>
+
+    <TextView
+        android:id="@+id/tag_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The place for all your grocery needs!"
+        android:textSize="@dimen/v25sp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/v15dp"/>
+
+
+
+</RelativeLayout>

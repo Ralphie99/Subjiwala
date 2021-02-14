@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/accessory_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorlightGrey"
+    android:clickable="true">
+
+    <!--<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--android:elevation="@dimen/v5dp">-->
+
+
+        <!--<include-->
+            <!--layout="@layout/toolbar_layout"/>-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="@dimen/v60dp"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/v250dp"
+                android:layout_marginBottom="@dimen/v5dp"
+                android:layout_marginTop="@dimen/v10dp"
+                android:src="@drawable/dummy_grocery" />
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:padding="@dimen/v5dp">-->
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_0"-->
+                    <!--android:layout_width="@dimen/v80dp"-->
+                    <!--android:layout_height="@dimen/v70dp"-->
+                    <!--android:layout_marginLeft="@dimen/v5dp"-->
+                    <!--android:padding="@dimen/v10dp"-->
+                    <!--android:src="@drawable/dummy_grocery" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_1"-->
+                    <!--android:layout_width="@dimen/v80dp"-->
+                    <!--android:layout_height="@dimen/v70dp"-->
+                    <!--android:layout_marginLeft="@dimen/v5dp"-->
+                    <!--android:padding="@dimen/v10dp"-->
+                    <!--android:src="@drawable/dummy_grocery" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_2"-->
+                    <!--android:layout_width="@dimen/v80dp"-->
+                    <!--android:layout_height="@dimen/v70dp"-->
+                    <!--android:layout_marginLeft="@dimen/v5dp"-->
+                    <!--android:padding="@dimen/v10dp"-->
+                    <!--android:src="@drawable/dummy_grocery" />-->
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_3"-->
+                    <!--android:layout_width="@dimen/v80dp"-->
+                    <!--android:layout_height="@dimen/v70dp"-->
+                    <!--android:layout_marginLeft="@dimen/v5dp"-->
+                    <!--android:padding="@dimen/v10dp"-->
+                    <!--android:src="@drawable/dummy_grocery" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:id="@+id/accessory_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/v10dp"
+                android:text="FPT Industrial Cursor 13 NP engine"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/v20sp" />
+
+            <TextView
+                android:id="@+id/accessory_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/v15dp"
+                android:text="Rs 2500/-"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/v22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/v20dp"
+                android:layout_marginRight="@dimen/v20dp"
+                android:layout_marginTop="@dimen/v10dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/v10dp"
+                android:text="Accessory Description"
+                android:textSize="@dimen/v20sp" />
+
+
+            <TextView
+                android:id="@+id/accessory_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/v10dp"
+                android:layout_marginBottom="@dimen/v10dp"
+                android:text="Accessory Description"
+                android:textSize="@dimen/v17sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/v20dp"
+                android:layout_marginRight="@dimen/v20dp"
+                android:layout_marginTop="@dimen/v10dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/v10dp"
+                android:text="Manufacturer"
+                android:textSize="@dimen/v20sp" />
+
+            <TextView
+                android:id="@+id/manufacturer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/v10dp"
+                android:layout_marginBottom="@dimen/v10dp"
+                android:text="Accessory Description"
+                android:textSize="@dimen/v17sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/shop_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/add_to_cart"
+            android:layout_width="@dimen/v0dp"
+            android:layout_height="45dp"
+            android:layout_margin="@dimen/v10dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundcorner_rect"
+            android:elevation="@dimen/v4dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/v10dp">
+
+            <TextView
+                android:id="@+id/add_to_cart_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/v10dp"
+                android:text="Add to Cart"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="@dimen/v20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buy_now"
+            android:layout_width="@dimen/v0dp"
+            android:layout_height="45dp"
+            android:layout_margin="@dimen/v10dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundcorner_rect"
+            android:elevation="@dimen/v4dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/v10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/v10dp"
+                android:text="Buy Now"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="@dimen/v20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/order_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

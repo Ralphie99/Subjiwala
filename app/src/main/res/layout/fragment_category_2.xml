@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Category_2"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:clickable="true">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:elevation="@dimen/v5dp">
+
+
+        <include
+            layout="@layout/toolbar_layout"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--<GridView-->
+        <!--android:id="@+id/category_2_data_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:numColumns="2"-->
+        <!--android:gravity="center"-->
+        <!--android:verticalSpacing="@dimen/v4dp"-->
+        <!--android:horizontalSpacing="@dimen/v4dp"-->
+        <!--android:layout_margin="@dimen/v5dp" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coming Soon!"
+        android:textSize="@dimen/v30sp"
+        android:padding="@dimen/v10dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:background="@drawable/elliptical_bg" />
+
+    </RelativeLayout>
+
+</LinearLayout>

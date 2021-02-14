@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v150dp"
+        android:layout_margin="@dimen/v5dp"
+        app:cardCornerRadius="@dimen/v2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/v5dp">
+
+                <ImageView
+                    android:id="@+id/cart_order_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/dummy_grocery"
+                    android:elevation="@dimen/v2dp" />
+
+            <LinearLayout
+                android:id="@+id/name_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cart_order_image"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cart_order_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="FPT Industrial Cursor 13 NP engine"
+                    android:textSize="@dimen/v18sp"
+                    android:maxLines="2"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/v15dp"
+                    android:layout_marginBottom="@dimen/v15dp"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/cart_order_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2500"
+                    android:layout_marginRight="@dimen/v5dp"
+                    android:textSize="@dimen/v20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/qty_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/v150dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/roundcorner_rect"
+                android:elevation="@dimen/v5dp"
+                android:layout_marginTop="@dimen/v15dp"
+                android:layout_marginBottom="@dimen/v5dp"
+                android:layout_marginLeft="@dimen/v10dp"
+                android:padding="@dimen/v3dp"
+                android:gravity="center"
+                android:layout_below="@id/name_linear"
+                android:layout_toRightOf="@id/cart_order_image">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qty: "
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="@dimen/v5dp"/>
+
+                <Spinner
+                    android:id="@+id/qty_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cart_remove"
+                android:layout_width="@dimen/v35dp"
+                android:layout_height="@dimen/v35dp"
+                android:src="@drawable/ic_dummy_delete"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/circle"
+                android:padding="@dimen/v5dp"
+                android:elevation="@dimen/v5dp"
+                android:layout_marginRight="@dimen/v10dp"
+                android:layout_marginBottom="@dimen/v10dp"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

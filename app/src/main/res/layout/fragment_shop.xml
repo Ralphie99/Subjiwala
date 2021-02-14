@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Shop"
+    android:background="@color/colorWhite">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:elevation="@dimen/v5dp">
+
+
+        <include
+            layout="@layout/toolbar_layout"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/shop_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/shop_tabs"/>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/shop_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v40dp"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorAccent"
+        android:layout_below="@id/toolbar"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/filter"-->
+        <!--android:layout_width="@dimen/v70dp"-->
+        <!--android:layout_height="@dimen/v70dp"-->
+        <!--android:src="@drawable/filter"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@drawable/circle"-->
+        <!--android:padding="@dimen/v15dp"-->
+        <!--android:layout_margin="@dimen/v30dp"-->
+        <!--android:elevation="@dimen/v5dp"-->
+        <!--android:clickable="true" />-->
+
+    <LinearLayout
+        android:id="@+id/sort_layout"
+        android:layout_width="@dimen/v200dp"
+        android:layout_height="@dimen/v40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/shop_tabs"
+        android:gravity="center"
+        android:padding="@dimen/v2dp"
+        android:elevation="@dimen/v2dp"
+        android:background="@drawable/elliptical_bg_white"
+        android:layout_marginTop="@dimen/v15dp">
+
+        <LinearLayout
+            android:id="@+id/change_view"
+            android:layout_width="@dimen/v0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/view_icon"
+                android:layout_width="@dimen/v25dp"
+                android:layout_height="@dimen/v25dp"
+                android:src="@drawable/list"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/v2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorlightGrey"/>
+
+
+        <LinearLayout
+            android:id="@+id/sort"
+            android:layout_width="@dimen/v0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price Sort"
+                android:layout_marginRight="@dimen/v5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/v16sp"/>
+
+            <ImageView
+                android:id="@+id/sort_image"
+                android:layout_width="@dimen/v25dp"
+                android:layout_height="@dimen/v25dp"
+                android:src="@drawable/unsort"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:elevation="@dimen/v5dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Login"
+    android:clickable="true">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/v15dp"
+        android:text="Log In"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/v25sp"
+        android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/v30dp"
+            android:layout_height="@dimen/v30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/v15dp"
+            android:layout_marginTop="@dimen/v15dp"
+            android:src="@drawable/toolbar_back" />
+
+    <LinearLayout
+        android:id="@+id/ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/v110dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/v15dp"
+            android:layout_marginRight="@dimen/v15dp"
+            app:hintTextAppearance="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:padding="@dimen/v15dp"
+                android:layout_marginBottom="@dimen/v10dp"
+                android:maxLines="1"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/v15dp"
+            android:layout_marginRight="@dimen/v15dp"
+            app:hintTextAppearance="@style/TextLabel"
+            app:passwordToggleEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/login_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/v15dp"
+                android:layout_marginBottom="@dimen/v10dp"
+                android:maxLines="1" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textSize="@dimen/v18sp"
+        android:background="@drawable/elliptical_bg"
+        android:layout_below="@id/ed"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorlightGrey"
+        android:layout_marginLeft="@dimen/v30dp"
+        android:layout_marginRight="@dimen/v30dp"
+        android:layout_marginTop="@dimen/v15dp"/>
+
+    <TextView
+        android:id="@+id/login_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username/Password Incorrect !"
+        android:textStyle="bold"
+        android:textColor="@color/flatRed"
+        android:textSize="@dimen/v15sp"
+        android:layout_below="@id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/v20dp"
+        android:background="@drawable/elliptical_bg_white"
+        android:padding="@dimen/v5dp"
+        android:visibility="invisible"/>
+
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="@dimen/v18sp"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/v15dp"
+        android:layout_below="@id/login_error"/>
+
+    <TextView
+        android:id="@+id/go_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Register here. "
+        android:textSize="@dimen/v18sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/v15dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

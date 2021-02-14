@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorlightGrey"
+    android:clickable="true"
+    android:id="@+id/my_cart_main">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/cart_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v50dp"
+            android:layout_marginLeft="@dimen/v20dp"
+            android:layout_marginRight="@dimen/v20dp"
+            android:layout_marginTop="@dimen/v10dp"
+            android:layout_marginBottom="@dimen/v10dp"
+            android:background="@drawable/elliptical_bg_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Cart"
+                android:textSize="@dimen/v25sp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="@dimen/v30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/toolbar_back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/v10dp"/>
+
+            <ImageView
+                android:id="@+id/go_home"
+                android:layout_width="@dimen/v30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/v10dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/no_internet"
+            layout="@layout/no_internet"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/order_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:layout_marginBottom="@dimen/v70dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/no_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="@dimen/v120dp"
+            android:layout_height="@dimen/v120dp"
+            android:src="@drawable/no_orders_yet"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No items in your cart."
+            android:textSize="@dimen/v25sp"
+            android:layout_marginTop="@dimen/v10dp"/>
+
+        <Button
+            android:id="@+id/go_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/elliptical_bg_white"
+            android:elevation="@dimen/v4dp"
+            android:text="Go Shopping!"
+            android:textSize="@dimen/v20sp"
+            android:padding="@dimen/v10dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="@dimen/v10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/continue_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true">
+
+
+            <TextView
+                android:id="@+id/final_price"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="@string/Rs"
+                android:textSize="@dimen/v20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="@dimen/v10dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/continue_to_payment"
+            android:layout_width="@dimen/v0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/elliptical_bg_white"
+            android:elevation="@dimen/v4dp"
+            android:gravity="center"
+            android:padding="@dimen/v10dp"
+            android:layout_margin="@dimen/v10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order"
+                android:textSize="@dimen/v20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="@dimen/v10dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
