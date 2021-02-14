@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/elliptical_bg_white"
+    android:backgroundTint="@color/flatRed"
+    android:gravity="center"
+    android:paddingLeft="@dimen/v15dp"
+    android:paddingRight="@dimen/v15dp"
+    android:paddingTop="@dimen/v5dp"
+    android:paddingBottom="@dimen/v5dp">
+
+    <ImageView
+        android:id="@+id/toast_image"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/flag" />
+
+    <TextView
+        android:id="@+id/toast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/v10dp"
+        android:text="Only in JABALPUR. YET!"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+</LinearLayout>

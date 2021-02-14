@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorlightGrey">
+
+    <TextView
+        android:id="@+id/qty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="@dimen/v25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/qty_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qty_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/v15dp"
+        android:layout_marginLeft="@dimen/v60dp"
+        android:layout_marginRight="@dimen/v60dp">
+
+        <EditText
+            android:id="@+id/qty"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="@dimen/v40dp"
+            android:layout_marginLeft="@dimen/v25dp"
+            android:hint="Enter Quantity"
+            android:gravity="center"
+            android:background="@drawable/elliptical_bg_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:text="KG"
+            android:textSize="@dimen/v25sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/v15dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default - One"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/v20sp"
+        android:layout_below="@id/qty_linear"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@drawable/roundcorner_rect"
+        android:textSize="@dimen/v30sp"
+        android:textStyle="bold"
+        android:padding="@dimen/v5dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/qty_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/v60dp"/>
+
+</RelativeLayout>
