@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Subjiwala</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="Username_hint"><font size = "20">Username</font></string>
+    <string name="Rs">\u20B9</string>
+</resources>
